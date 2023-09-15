@@ -3,7 +3,29 @@
     "author": "natan & sawyer",
     "_version": "3.1.0",
     "_release": "3",
-    "scenes": [],
+    "scenes": [
+        {
+            "name": "Scene 1",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "cb51b74f-36e5-448b-9d3c-fd9f967d8654",
+            "symbol": "scene_1",
+            "x": 360,
+            "y": 208,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        }
+    ],
     "backgrounds": [
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
