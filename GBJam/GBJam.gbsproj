@@ -55,7 +55,18 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_1",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "according to all\nknown laws of\naviation..."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "2db00944-bc8b-4d1c-9696-a6e5fd5de22f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -926,6 +937,14 @@
     "customEvents": [],
     "music": [
         {
+            "id": "00073da2-c6cb-4be3-9f3c-056bdd7515ea",
+            "name": "song_template",
+            "symbol": "song_song_template",
+            "filename": "song_template.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "25af2b5f-283f-4043-ac53-5f07141e67ac",
             "name": "song_template_1",
             "symbol": "song_song_template_1",
@@ -1074,9 +1093,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            465,
-            141,
-            141
+            461,
+            140,
+            140
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
