@@ -1,8 +1,8 @@
 {
     "name": "GBJam",
-    "author": "natan & sawyer",
+    "author": "natan",
     "_version": "3.1.0",
-    "_release": "3",
+    "_release": "0",
     "scenes": [],
     "backgrounds": [
         {
@@ -966,9 +966,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            461,
-            140,
-            140
+            443,
+            135,
+            135
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
