@@ -3,7 +3,29 @@
     "author": "natan & sawyer",
     "_version": "3.1.0",
     "_release": "3",
-    "scenes": [],
+    "scenes": [
+        {
+            "name": "Scene 1",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "cb51b74f-36e5-448b-9d3c-fd9f967d8654",
+            "symbol": "scene_1",
+            "x": 360,
+            "y": 208,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        }
+    ],
     "backgrounds": [
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -606,6 +628,37 @@
                                             "priority": false
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "e1e7e313-8a83-4699-841f-15bb810b66dc",
+                                    "tiles": [
+                                        {
+                                            "id": "604316c2-219a-4bb0-9ee5-b23f13e5470d",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "f7570957-c687-4718-898f-d757b3270474",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 8,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -826,6 +879,14 @@
     "customEvents": [],
     "music": [
         {
+            "id": "25af2b5f-283f-4043-ac53-5f07141e67ac",
+            "name": "song_template_1",
+            "symbol": "song_song_template_1",
+            "filename": "song_template_1.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "symbol": "song_template",
@@ -966,9 +1027,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            461,
-            140,
-            140
+            465,
+            141,
+            141
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
