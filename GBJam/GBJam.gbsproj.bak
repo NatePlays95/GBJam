@@ -41,8 +41,63 @@
                     "id": "9dde1768-8485-4ef4-80db-10fbf45b091d",
                     "x": 3,
                     "y": 16
+                },
+                {
+                    "name": "Nate's second actor",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_1",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "according to all\nknown laws of\naviation..."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "2db00944-bc8b-4d1c-9696-a6e5fd5de22f"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "d67360a2-cedc-4130-8ecb-44ebaab196fa",
+                    "x": 7,
+                    "y": 16
                 }
             ],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "2a8a1834-b1a5-437d-bfcb-39569055af3d",
+            "symbol": "scene_2",
+            "x": 589,
+            "y": 185,
+            "actors": [],
             "triggers": [],
             "script": [],
             "playerHit1Script": [],
@@ -1021,7 +1076,7 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
+        "worldScrollX": 32,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": false,
