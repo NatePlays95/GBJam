@@ -887,6 +887,48 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "2b74cf40-8af8-4f25-bd22-9985c082523f"
+        },
+        {
+            "name": "Boiler Room",
+            "backgroundId": "5d62579e-0d9d-4e7b-a08d-5d56d509ee66",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "5a5a3abc-4be0-4056-811e-53c574beb1b8",
+            "symbol": "scene_4",
+            "x": 534.1538461538462,
+            "y": 294.7692307692308,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Motel Room",
+            "backgroundId": "5d62579e-0d9d-4e7b-a08d-5d56d509ee66",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "8c77d5e6-2b6f-4545-a872-48662afcc3db",
+            "symbol": "scene_5",
+            "x": 260.3076923076923,
+            "y": 292.3076923076923,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
@@ -898,7 +940,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "hallway1.png"
+            "filename": "hallway1.png",
+            "tileColors": []
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -919,7 +962,8 @@
             "height": 20,
             "imageWidth": 160,
             "imageHeight": 160,
-            "filename": "reception_desk.png"
+            "filename": "reception_desk.png",
+            "tileColors": []
         }
     ],
     "spriteSheets": [
@@ -2964,8 +3008,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 564,
-        "worldScrollY": 0,
+        "worldScrollX": 354.3999938964844,
+        "worldScrollY": 200,
         "zoom": 162.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -2994,9 +3038,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            205,
-            141,
-            401
+            203,
+            140,
+            398
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
