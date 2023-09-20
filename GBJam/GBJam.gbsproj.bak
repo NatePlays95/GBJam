@@ -549,37 +549,23 @@
                 },
                 {
                     "name": "",
-                    "id": "c5d42e1a-264f-4b62-9f27-44258ac8ea01",
-                    "x": 4,
+                    "id": "1ab22cb6-32eb-44fc-b936-f5c64d18db05",
+                    "x": 14,
                     "y": 7,
-                    "symbol": "trigger_10",
+                    "symbol": "trigger_11",
                     "width": 2,
                     "height": 1,
                     "script": [
                         {
-                            "command": "EVENT_IF_TRUE",
+                            "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "variable": "9",
-                                "__collapseElse": false,
-                                "__collapse": false
+                                "sceneId": "8c77d5e6-2b6f-4545-a872-48662afcc3db",
+                                "x": 8,
+                                "y": 13,
+                                "direction": "up",
+                                "fadeSpeed": "2"
                             },
-                            "children": {
-                                "true": [],
-                                "false": [
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "It's a janitor's\ncloset.",
-                                                "It's locked right\nnow..."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "b1fb9725-8979-41bf-80d4-c65a54a7e35c"
-                                    }
-                                ]
-                            },
-                            "id": "9ad8bc55-eff3-4479-a4a9-e53e83458d5c"
+                            "id": "f04bff4a-ac17-4279-a1c4-220d7894ba40"
                         }
                     ],
                     "leaveScript": []
@@ -1185,7 +1171,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "9f44954b-5488-41ca-9a88-3e5663d30c6c",
-                    "x": 12,
+                    "x": 14,
                     "y": 7
                 }
             ],
@@ -1325,6 +1311,43 @@
                                 "useCollisions": false
                             },
                             "id": "a114d7a4-be71-449b-9d94-9909e3589fa3"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "c5d42e1a-264f-4b62-9f27-44258ac8ea01",
+                    "x": 12,
+                    "y": 5,
+                    "symbol": "trigger_10",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "9",
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "It's a janitor's\ncloset.",
+                                                "It's locked right\nnow..."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "b1fb9725-8979-41bf-80d4-c65a54a7e35c"
+                                    }
+                                ]
+                            },
+                            "id": "9ad8bc55-eff3-4479-a4a9-e53e83458d5c"
                         }
                     ],
                     "leaveScript": []
@@ -1816,8 +1839,8 @@
             "playerSpriteSheetId": "2b74cf40-8af8-4f25-bd22-9985c082523f"
         },
         {
-            "name": "Motel Room",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "name": "Motel Room 1",
+            "backgroundId": "746e2094-3713-44ad-8880-fd5f23e788c5",
             "width": 20,
             "height": 18,
             "type": "TOPDOWN",
@@ -1827,10 +1850,34 @@
             "autoFadeSpeed": 1,
             "id": "8c77d5e6-2b6f-4545-a872-48662afcc3db",
             "symbol": "scene_5",
-            "x": 591.3846153846151,
-            "y": 60.76923076923079,
+            "x": 341.09890109890125,
+            "y": 37.912087912087934,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "29a92c60-d132-4dd3-9d51-e943d88dc4a3",
+                    "x": 8,
+                    "y": 14,
+                    "symbol": "trigger_12",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "2a8a1834-b1a5-437d-bfcb-39569055af3d",
+                                "x": 14,
+                                "y": 8,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "759566e1-cdbf-4b2a-8650-5bf2f174be50"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -1848,8 +1895,8 @@
             "autoFadeSpeed": 1,
             "id": "ccdbf406-8afb-45ce-9600-edec2144dc87",
             "symbol": "scene_0",
-            "x": 348.4307767427889,
-            "y": 66.9230769230769,
+            "x": 742.7164910285031,
+            "y": 53.20879120879119,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -1867,7 +1914,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "boiler.png"
+            "filename": "boiler.png",
+            "tileColors": []
         },
         {
             "id": "5d62579e-0d9d-4e7b-a08d-5d56d509ee66",
@@ -1879,6 +1927,16 @@
             "imageHeight": 144,
             "filename": "hallway1.png",
             "tileColors": []
+        },
+        {
+            "id": "746e2094-3713-44ad-8880-fd5f23e788c5",
+            "name": "motel_room1",
+            "symbol": "bg_placeholder_copia_0",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "motel_room1.png"
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -4059,14 +4117,14 @@
     ],
     "variables": [
         {
-            "id": "10",
-            "name": "TalkToDoople",
-            "symbol": "var_talktodoople"
-        },
-        {
             "id": "9",
             "name": "JanitorKey",
             "symbol": "var_janitorkey"
+        },
+        {
+            "id": "10",
+            "name": "TalkToDoople",
+            "symbol": "var_talktodoople"
         },
         {
             "id": "11",
@@ -4089,9 +4147,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 387.20001220703125,
+        "worldScrollX": 365.6000061035156,
         "worldScrollY": 0,
-        "zoom": 162.5,
+        "zoom": 175,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -4119,9 +4177,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            203,
-            140,
-            398
+            204,
+            141,
+            402
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
