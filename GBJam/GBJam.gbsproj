@@ -988,14 +988,16 @@
                             "command": "EVENT_IF_FALSE",
                             "args": {
                                 "variable": "10",
-                                "__collapseElse": true
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
                                     {
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
-                                            "variable": "10"
+                                            "variable": "10",
+                                            "__collapse": false
                                         },
                                         "id": "653886f6-0e88-4249-9353-34878c5db4f4"
                                     },
@@ -1098,9 +1100,46 @@
                                         "id": "2fbe9975-73d5-4120-81a6-05ba5de2ba58"
                                     }
                                 ],
-                                "false": []
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Janitor: Go to the\nboiler room!",
+                                                "That's where I\nleft the key!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "89438419-1098-48e1-81ec-c35a0b7c5a31"
+                                    }
+                                ]
                             },
                             "id": "20af0891-e573-424a-a164-a8b9b0119d11"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "9",
+                                "__collapseElse": true,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Janitor: You got\nthe key!",
+                                                "Get the crowbar\nfrom the closet!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "84830359-da9f-4c56-bb75-3a721a4f27e5"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "672b5101-b672-4be4-90ba-d3605d136294"
                         }
                     ],
                     "startScript": [],
@@ -1109,7 +1148,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "9f44954b-5488-41ca-9a88-3e5663d30c6c",
-                    "x": 12,
+                    "x": 14,
                     "y": 7
                 }
             ],
@@ -1249,6 +1288,43 @@
                                 "useCollisions": false
                             },
                             "id": "a114d7a4-be71-449b-9d94-9909e3589fa3"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "c5d42e1a-264f-4b62-9f27-44258ac8ea01",
+                    "x": 12,
+                    "y": 5,
+                    "symbol": "trigger_10",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "9",
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "It's a janitor's\ncloset.",
+                                                "It's locked right\nnow..."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "b1fb9725-8979-41bf-80d4-c65a54a7e35c"
+                                    }
+                                ]
+                            },
+                            "id": "9ad8bc55-eff3-4479-a4a9-e53e83458d5c"
                         }
                     ],
                     "leaveScript": []
@@ -1666,6 +1742,13 @@
                                 "variable": "9"
                             },
                             "id": "17929023-8df6-4d15-a0ba-a3f35f894312"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_DEACTIVATE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "6c3d2071-8fc7-48b0-b186-60c1240cda66"
                         }
                     ],
                     "startScript": [],
@@ -3987,8 +4070,8 @@
         },
         {
             "id": "11",
-            "name": "DoorUnlocked",
-            "symbol": "var_doorunlocked"
+            "name": "FrontDoorUnlocked",
+            "symbol": "var_frontdoorunlocked_0"
         }
     ],
     "engineFieldValues": [
