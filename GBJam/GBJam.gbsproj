@@ -377,8 +377,8 @@
             "autoFadeSpeed": 1,
             "id": "2a8a1834-b1a5-437d-bfcb-39569055af3d",
             "symbol": "scene_2",
-            "x": 450.0000000000004,
-            "y": 266.4615384615383,
+            "x": 695.7142857142863,
+            "y": 287.0329670329667,
             "actors": [],
             "triggers": [
                 {
@@ -990,8 +990,8 @@
             "autoFadeSpeed": 1,
             "id": "75f27371-c5f5-4b6a-a2a3-c2964daa5289",
             "symbol": "scene_3",
-            "x": 647.8769155649036,
-            "y": 264.2461547851561,
+            "x": 959.8769155649034,
+            "y": 280.24615478515625,
             "actors": [
                 {
                     "name": "",
@@ -1732,8 +1732,8 @@
             "autoFadeSpeed": 1,
             "id": "5a5a3abc-4be0-4056-811e-53c574beb1b8",
             "symbol": "scene_4",
-            "x": 253.53846153846135,
-            "y": 271.99999999999983,
+            "x": 60,
+            "y": 263.99999999999966,
             "actors": [
                 {
                     "name": "",
@@ -2211,8 +2211,8 @@
             "autoFadeSpeed": 1,
             "id": "8c77d5e6-2b6f-4545-a872-48662afcc3db",
             "symbol": "scene_5",
-            "x": 341.09890109890125,
-            "y": 37.912087912087934,
+            "x": 799.0036630036632,
+            "y": 49.59462759462761,
             "actors": [],
             "triggers": [
                 {
@@ -2242,7 +2242,8 @@
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "2b74cf40-8af8-4f25-bd22-9985c082523f"
         },
         {
             "name": "JanitorCloset",
@@ -2256,8 +2257,8 @@
             "autoFadeSpeed": 1,
             "id": "ccdbf406-8afb-45ce-9600-edec2144dc87",
             "symbol": "scene_0",
-            "x": 742.7164910285031,
-            "y": 53.20879120879119,
+            "x": 1055.8593481713597,
+            "y": 45.20879120879119,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -2298,6 +2299,36 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "motel_room1.png"
+        },
+        {
+            "id": "a3cbdb47-f109-42be-87ad-6879158d5f88",
+            "name": "motel_room2",
+            "symbol": "bg_motel_room1_copia",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "motel_room2.png"
+        },
+        {
+            "id": "b5abd294-aa36-4745-8af9-4e9ba778ca31",
+            "name": "motel_room3",
+            "symbol": "bg_motel_room2_copia",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "motel_room3.png"
+        },
+        {
+            "id": "d359f74d-6b67-4c7f-9f36-62ad4973259e",
+            "name": "motel_room4",
+            "symbol": "bg_motel_room2_copia_0",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "motel_room4.png"
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -4508,9 +4539,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 365.6000061035156,
+        "worldScrollX": 32,
         "worldScrollY": 0,
-        "zoom": 175,
+        "zoom": 87.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
