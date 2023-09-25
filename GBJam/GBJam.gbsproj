@@ -2423,7 +2423,8 @@
                                     {
                                         "command": "EVENT_MUSIC_PLAY",
                                         "args": {
-                                            "musicId": "d4b82786-e31e-40b4-8885-d23644b3d5de"
+                                            "musicId": "d4b82786-e31e-40b4-8885-d23644b3d5de",
+                                            "__collapse": true
                                         },
                                         "id": "a943081b-517a-4102-9850-5e50773d00c6"
                                     },
@@ -2448,7 +2449,8 @@
                                     {
                                         "command": "EVENT_FADE_OUT",
                                         "args": {
-                                            "speed": "2"
+                                            "speed": "2",
+                                            "__collapse": false
                                         },
                                         "id": "8912f786-08cd-4096-baf9-2981a69cb8b8"
                                     },
@@ -2466,6 +2468,13 @@
                                             "speed": 4
                                         },
                                         "id": "cdaa10f9-8814-4657-baa7-16e9a3a392a8"
+                                    },
+                                    {
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "0fb4cae1-8d3b-443a-a280-e4cd9f3bfa25"
+                                        },
+                                        "id": "45a799c7-e065-4a0c-b4c9-4fe3d83bde90"
                                     },
                                     {
                                         "command": "EVENT_TEXT",
@@ -8796,6 +8805,14 @@
             "type": "uge"
         },
         {
+            "id": "0fb4cae1-8d3b-443a-a280-e4cd9f3bfa25",
+            "name": "Motel",
+            "symbol": "song_motel",
+            "filename": "Motel.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "d4b82786-e31e-40b4-8885-d23644b3d5de",
             "name": "Title",
             "symbol": "song_title",
@@ -8943,14 +8960,14 @@
             "symbol": "var_anotherdamnkey"
         },
         {
-            "id": "9f44954b-5488-41ca-9a88-3e5663d30c6c__L0",
-            "name": "Local 0",
-            "symbol": "var_local_0"
-        },
-        {
             "id": "16",
             "name": "CrowbarGot",
             "symbol": "var_crowbargot"
+        },
+        {
+            "id": "9f44954b-5488-41ca-9a88-3e5663d30c6c__L0",
+            "name": "Local 0",
+            "symbol": "var_local_0"
         }
     ],
     "engineFieldValues": [
@@ -8968,7 +8985,7 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 536,
+        "worldScrollX": 347.20001220703125,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": false,

@@ -4845,6 +4845,40 @@
                     "id": "3141fe80-0bde-49ff-91cf-89c5a4d8adf2",
                     "x": 4,
                     "y": 7
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_14",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Locked."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "0a0b0efd-07d5-4722-aa32-26d0a08f8a55"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "25c15027-5115-4cb5-afc2-a3aa282f5ad3",
+                    "x": 14,
+                    "y": 7
                 }
             ],
             "triggers": [
@@ -4867,29 +4901,6 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "04e0a035-4f93-4132-9417-518c335559d2"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
-                    "id": "01991626-1722-4d7b-8cda-92005f5abbee",
-                    "x": 14,
-                    "y": 7,
-                    "symbol": "trigger_20",
-                    "width": 2,
-                    "height": 1,
-                    "script": [
-                        {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "b2208381-fe70-4d96-84e3-d3037d9d8ff9",
-                                "x": 8,
-                                "y": 13,
-                                "direction": "up",
-                                "fadeSpeed": "2"
-                            },
-                            "id": "5cc3a61d-6e7c-4231-a567-b023f945005a"
                         }
                     ],
                     "leaveScript": []
@@ -5312,41 +5323,6 @@
                     "isPinned": false,
                     "persistent": false,
                     "collisionGroup": "",
-                    "symbol": "actor_14",
-                    "script": [
-                        {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "ccdbf406-8afb-45ce-9600-edec2144dc87",
-                                "x": 8,
-                                "y": 8,
-                                "direction": "",
-                                "fadeSpeed": "2"
-                            },
-                            "id": "d08d0e81-25da-4cf0-b1a4-ef593c32e5d9"
-                        }
-                    ],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "b1c0bc0d-078b-4e6b-8a2d-962f9e148b65",
-                    "x": 8,
-                    "y": 14
-                },
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "persistent": false,
-                    "collisionGroup": "",
                     "symbol": "actor_15",
                     "script": [
                         {
@@ -5390,8 +5366,8 @@
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "56ab2e02-a2bf-48c5-a9e3-f521d705d182",
-                                "x": 14,
+                                "sceneId": "ccdbf406-8afb-45ce-9600-edec2144dc87",
+                                "x": 8,
                                 "y": 8,
                                 "direction": "down",
                                 "fadeSpeed": "2"
