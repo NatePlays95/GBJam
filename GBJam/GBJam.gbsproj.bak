@@ -1152,46 +1152,51 @@
                     "symbol": "actor_1",
                     "script": [
                         {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "9259d6f5-6d88-4221-82d3-b2da56e67439",
-                                "x": 0,
-                                "y": 17,
-                                "direction": "",
-                                "fadeSpeed": "2",
-                                "__collapse": true
-                            },
-                            "id": "3c718a0b-a815-4310-8ed4-b55294ae5c67"
-                        },
-                        {
-                            "command": "EVENT_WAIT",
-                            "args": {
-                                "time": 1,
-                                "frames": 30,
-                                "__collapse": true
-                            },
-                            "id": "c58a6c14-0327-475a-9f20-cfa12801e933"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "nebrask galaxy\nmake whales fly here"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true
-                            },
-                            "id": "447adb1d-37d5-40b5-a3c9-d9d523515b72"
-                        },
-                        {
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "11",
-                                "__collapseElse": true
+                                "__collapseElse": false
                             },
                             "children": {
-                                "true": [],
-                                "false": []
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "9259d6f5-6d88-4221-82d3-b2da56e67439",
+                                            "x": 0,
+                                            "y": 17,
+                                            "direction": "",
+                                            "fadeSpeed": "2",
+                                            "__collapse": true
+                                        },
+                                        "id": "3c718a0b-a815-4310-8ed4-b55294ae5c67"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The front door is\nlocked.",
+                                                "I need to find the\nspare key."
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "43d8c497-3961-4e08-a6e8-6c007249ee94"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "player",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "up"
+                                            }
+                                        },
+                                        "id": "b033c246-1b24-4c8f-9235-521f736e7997"
+                                    }
+                                ]
                             },
                             "id": "a9e73889-e809-493a-860a-e7664a8c1b59"
                         }
@@ -8392,9 +8397,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1084.800048828125,
-        "worldScrollY": 287.20001220703125,
-        "zoom": 150,
+        "worldScrollX": 180,
+        "worldScrollY": 0,
+        "zoom": 87.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
