@@ -3818,7 +3818,7 @@
                     "command": "EVENT_IF_TRUE",
                     "args": {
                         "variable": "11",
-                        "__collapseElse": true
+                        "__collapseElse": false
                     },
                     "children": {
                         "true": [
@@ -3842,9 +3842,16 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "That was a lot of\nkeys I had to get.",
-                                        "And I was late for\nmy appointment.",
-                                        "But at least I get\nto see the whales.",
+                                        "Hey...",
+                                        "Are those the\nwhales up there?",
+                                        "That's cooler than\nI imagined.",
+                                        "I kinda can't\nbelieve my eyes.",
+                                        "You know...",
+                                        "This galaxy kinda\nspeaks to me.",
+                                        "There's a calmness\nto this nothing.",
+                                        "It's relaxing.\nBeautiful, even.",
+                                        "I know Earth is\ncalling my name...",
+                                        "But I think it can\nwait a bit more.",
                                         "    -THE END-"
                                     ],
                                     "avatarId": "",
@@ -3887,8 +3894,8 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Writing by Sawyer\nFriend and",
-                                        "Natan Maia"
+                                        "Writing by Sawyer\nFriend, CallMeDJ,",
+                                        "and Natan Maia"
                                     ],
                                     "avatarId": ""
                                 },
@@ -3905,28 +3912,30 @@
                                 "id": "d4ca0621-ee4e-4e71-8fe9-ba5b6c95fbbe"
                             }
                         ],
-                        "false": []
+                        "false": [
+                            {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 0.5,
+                                    "frames": 30,
+                                    "__collapse": true
+                                },
+                                "id": "925b5858-1115-4682-b7d5-83b1a46f0c8c"
+                            },
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "75f27371-c5f5-4b6a-a2a3-c2964daa5289",
+                                    "x": 9,
+                                    "y": 17,
+                                    "direction": "down",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "8e042a73-b30b-46e2-968a-6f75f585ecb8"
+                            }
+                        ]
                     },
                     "id": "c317de2d-936e-479a-ab50-77b4ad5d1f46"
-                },
-                {
-                    "command": "EVENT_WAIT",
-                    "args": {
-                        "time": 0.5,
-                        "frames": 30
-                    },
-                    "id": "925b5858-1115-4682-b7d5-83b1a46f0c8c"
-                },
-                {
-                    "command": "EVENT_SWITCH_SCENE",
-                    "args": {
-                        "sceneId": "75f27371-c5f5-4b6a-a2a3-c2964daa5289",
-                        "x": 9,
-                        "y": 17,
-                        "direction": "down",
-                        "fadeSpeed": "2"
-                    },
-                    "id": "8e042a73-b30b-46e2-968a-6f75f585ecb8"
                 }
             ],
             "playerHit1Script": [],
