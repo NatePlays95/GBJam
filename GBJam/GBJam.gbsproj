@@ -973,117 +973,238 @@
                         {
                             "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "10",
-                                "__collapseElse": false,
-                                "__collapse": false
+                                "variable": "16",
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_SET_TRUE",
+                                        "command": "EVENT_IF_FALSE",
                                         "args": {
                                             "variable": "10",
-                                            "__collapse": false
+                                            "__collapseElse": false,
+                                            "__collapse": true
                                         },
-                                        "id": "653886f6-0e88-4249-9353-34878c5db4f4"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "10",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "653886f6-0e88-4249-9353-34878c5db4f4"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Emcee: Hey, where\nis everyone?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "594dfd79-06bf-4b51-871e-2e0b2340ab4d"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Janitor: There are\nstill people here?",
+                                                            "We're closed for\nthe whale show!"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "e6e7f3af-b2ca-4cde-848f-230391cc6ef1"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Emcee: Oh no! I\nslept through it?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "ca4b07ee-fd69-4f51-809b-ad238f482f58"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Janitor: Seems\nthat way! Sorry!",
+                                                            "Unfortunately, the\nexit is locked.",
+                                                            "I forgot my keys\nat home."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "0616ca08-7763-42a9-b279-0d9586f8a0c3"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Emcee: So we're\ntrapped here?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "259a9fb8-0245-45b3-80c9-624b38a7bfde"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Janitor: Kinda.\nI have a spare.",
+                                                            "But it's in this\ndrawer...",
+                                                            "...and the \ndrawer's jammed."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "c64e7c7c-a9bc-4b7c-8a40-197e56f655ba"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Emcee: Do you have\na way to open it?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "5cda2d42-9c57-4992-b8d5-4e59cab06afd"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Janitor: I have a\ncrowbar.",
+                                                            "But it's in the\njanitor's closet.",
+                                                            "I left the key in\nthe boiler room."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "0cbc9871-f4eb-44ab-8d05-82100803a9ec"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Emcee: Okay, I'll\nfind it!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "2fbe9975-73d5-4120-81a6-05ba5de2ba58"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Janitor: Go to the\nboiler room!",
+                                                            "That's where I\nleft the key!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "89438419-1098-48e1-81ec-c35a0b7c5a31"
+                                                }
+                                            ]
+                                        },
+                                        "id": "20af0891-e573-424a-a164-a8b9b0119d11"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "text": [
-                                                "Emcee: Hey, where\nis everyone?"
-                                            ],
-                                            "avatarId": ""
+                                            "variable": "9",
+                                            "__collapseElse": true,
+                                            "__collapse": true
                                         },
-                                        "id": "594dfd79-06bf-4b51-871e-2e0b2340ab4d"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Janitor: There are\nstill people here?",
-                                                "We're closed for\nthe whale show!"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Janitor: You got\nthe key!",
+                                                            "Get the crowbar\nfrom the closet!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "84830359-da9f-4c56-bb75-3a721a4f27e5"
+                                                },
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "13",
+                                                        "__collapseElse": true,
+                                                        "__collapse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_IF_FALSE",
+                                                                "args": {
+                                                                    "variable": "15",
+                                                                    "__collapseElse": false,
+                                                                    "__collapse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Emcee: The closet\nis locked too!"
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "ac98e927-0ce6-4f15-bab9-0c6720aeb5dd"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Janitor: My bad!\nOne more key.",
+                                                                                    "My room is the one\non the left.",
+                                                                                    "Grab the key from\nthe box, kay?",
+                                                                                    "Here's the key to\nmy box! Thanks!"
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "d68ff918-6ccd-4963-bba3-96f72902a6a9"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "14",
+                                                                                "__collapse": false
+                                                                            },
+                                                                            "id": "3e5a4574-4376-4d9f-b627-829ccc8e8da7"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Janitor: Okay, you\ncan get in there!",
+                                                                                    "The crowbar is in\nthe box."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "fc984dc6-4688-4b5c-9d79-c24ce35a37a4"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "a7658878-8526-45d9-b118-d3db1d52cb0c"
+                                                            }
+                                                        ],
+                                                        "false": []
+                                                    },
+                                                    "id": "a0abe546-c161-4177-a993-b592dc53cba6"
+                                                }
                                             ],
-                                            "avatarId": "",
-                                            "__collapse": false
+                                            "false": []
                                         },
-                                        "id": "e6e7f3af-b2ca-4cde-848f-230391cc6ef1"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Emcee: Oh no! I\nslept through it?"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "ca4b07ee-fd69-4f51-809b-ad238f482f58"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Janitor: Seems\nthat way! Sorry!",
-                                                "Unfortunately, the\nexit is locked.",
-                                                "I forgot my keys\nat home."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "0616ca08-7763-42a9-b279-0d9586f8a0c3"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Emcee: So we're\ntrapped here?"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "259a9fb8-0245-45b3-80c9-624b38a7bfde"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Janitor: Kinda.\nI have a spare.",
-                                                "But it's in this\ndrawer...",
-                                                "...and the \ndrawer's jammed."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "c64e7c7c-a9bc-4b7c-8a40-197e56f655ba"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Emcee: Do you have\na way to open it?"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "5cda2d42-9c57-4992-b8d5-4e59cab06afd"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Janitor: I have a\ncrowbar.",
-                                                "But it's in the\njanitor's closet.",
-                                                "I left the key in\nthe boiler room."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "0cbc9871-f4eb-44ab-8d05-82100803a9ec"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Emcee: Okay, I'll\nfind it!"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "2fbe9975-73d5-4120-81a6-05ba5de2ba58"
+                                        "id": "672b5101-b672-4be4-90ba-d3605d136294"
                                     }
                                 ],
                                 "false": [
@@ -1091,41 +1212,16 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Janitor: Go to the\nboiler room!",
-                                                "That's where I\nleft the key!"
+                                                "Janitor: You got\nit!",
+                                                "Use it on the back\ncounter drawer."
                                             ],
                                             "avatarId": ""
                                         },
-                                        "id": "89438419-1098-48e1-81ec-c35a0b7c5a31"
+                                        "id": "a716d560-65b3-4103-9bb8-9c8b6abe44cb"
                                     }
                                 ]
                             },
-                            "id": "20af0891-e573-424a-a164-a8b9b0119d11"
-                        },
-                        {
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "9",
-                                "__collapseElse": true,
-                                "__collapse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Janitor: You got\nthe key!",
-                                                "Get the crowbar\nfrom the closet!"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "84830359-da9f-4c56-bb75-3a721a4f27e5"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "672b5101-b672-4be4-90ba-d3605d136294"
+                            "id": "85aea9cd-60b4-40e6-9559-5faccc82b0a2"
                         }
                     ],
                     "startScript": [],
@@ -1209,6 +1305,74 @@
                     "id": "a2d55ac7-2181-4f5d-a845-97bc0b00098c",
                     "x": 9,
                     "y": 19
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_16",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "16",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "player",
+                                            "direction": "down",
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "There it is! The\nfront door key!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "7d4bf98f-5b49-457a-a7a3-0c6c298945ef"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "11"
+                                                    },
+                                                    "id": "19dff6fe-6739-4d5d-bf9e-b9a29eba42a4"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "c96fbc71-f94e-4a19-b4d7-f902d36c9def"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "90fdc606-157a-447a-b217-ae5c58ccb86b"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "4ae80cff-3d1c-424b-911f-ea13327f9c6d",
+                    "x": 5,
+                    "y": 8
                 }
             ],
             "triggers": [
@@ -1276,7 +1440,19 @@
                                 "__collapse": false
                             },
                             "children": {
-                                "true": [],
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "ccdbf406-8afb-45ce-9600-edec2144dc87",
+                                            "x": 8,
+                                            "y": 13,
+                                            "direction": "up",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "cb1c2732-052f-41fd-a49e-d5fd3ae73c80"
+                                    }
+                                ],
                                 "false": [
                                     {
                                         "command": "EVENT_TEXT",
@@ -2225,7 +2401,7 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "12",
-                                "__collapseElse": true,
+                                "__collapseElse": false,
                                 "__collapse": false
                             },
                             "children": {
@@ -2235,15 +2411,22 @@
                                         "args": {
                                             "text": [
                                                 "This is my room. \nNothing out of the",
-                                                "of the here, I \nthink."
+                                                "ordinary here, I \nthink."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "55dbf726-df44-46b1-9997-3144f5662cb0"
                                     }
                                 ],
                                 "false": [
+                                    {
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "d4b82786-e31e-40b4-8885-d23644b3d5de"
+                                        },
+                                        "id": "a943081b-517a-4102-9850-5e50773d00c6"
+                                    },
                                     {
                                         "command": "EVENT_TEXT",
                                         "args": {
@@ -2786,7 +2969,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
-                    "direction": "down",
+                    "direction": "up",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
@@ -2796,14 +2979,58 @@
                     "symbol": "actor_11",
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "Locked."
-                                ],
-                                "avatarId": ""
+                                "variable": "15",
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
-                            "id": "060d3250-1469-4997-9a12-86c7ab2e8114"
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "b2208381-fe70-4d96-84e3-d3037d9d8ff9",
+                                            "x": 8,
+                                            "y": 12,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "2eecf204-c29f-41b0-8e56-d0dd32058792"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Locked."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "060d3250-1469-4997-9a12-86c7ab2e8114"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Emcee: Another\nlocked door?!",
+                                                "That janitor\nbetter have a key."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "3a855efe-7beb-48bc-a63a-7da98b781494"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "13"
+                                        },
+                                        "id": "3b4ac7eb-5afd-4b70-a80b-a3174feff4bf"
+                                    }
+                                ]
+                            },
+                            "id": "a2a88040-ad37-4826-bbe3-60d94d48ee7f"
                         }
                     ],
                     "startScript": [],
@@ -2814,9 +3041,69 @@
                     "id": "596736f9-1547-4d44-ba4e-561002885341",
                     "x": 8,
                     "y": 7
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_13",
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "75f27371-c5f5-4b6a-a2a3-c2964daa5289",
+                                "x": 19,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2",
+                                "__collapse": true
+                            },
+                            "id": "215155bc-25af-4262-bafe-c478f7c8ce4f"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "5f420da2-b197-47b7-a76f-a6ff7c59975c",
+                    "x": 10,
+                    "y": 15
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "18a5ac5e-8e60-4efb-b8a5-2b5b54e92ecf",
+                    "x": 8,
+                    "y": 14,
+                    "symbol": "trigger_23",
+                    "width": 1,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "75f27371-c5f5-4b6a-a2a3-c2964daa5289",
+                                "x": 12,
+                                "y": 6,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "4d6938b1-6bba-486b-b745-7c7a8eb5c7c4"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -3519,23 +3806,99 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_WAIT",
+                    "command": "EVENT_IF_TRUE",
                     "args": {
-                        "time": 0.5,
-                        "frames": 30
+                        "variable": "11",
+                        "__collapseElse": true
                     },
-                    "id": "232a071d-a9e0-4e26-839d-6b45ed8e9067"
-                },
-                {
-                    "command": "EVENT_TEXT",
-                    "args": {
-                        "text": [
-                            "nebrask galaxy\nmake whales fly here"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_MUSIC_PLAY",
+                                "args": {
+                                    "musicId": "95fd1aaf-2338-41a6-97b3-75eeb01b25ee"
+                                },
+                                "id": "941b509f-8415-47e0-bc41-2370aee54aed"
+                            },
+                            {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 0.5,
+                                    "frames": 30,
+                                    "__collapse": false
+                                },
+                                "id": "232a071d-a9e0-4e26-839d-6b45ed8e9067"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "That was a lot of\nkeys I had to get.",
+                                        "And I was late for\nmy appointment.",
+                                        "But at least I get\nto see the whales.",
+                                        "    -THE END-"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": false
+                                },
+                                "id": "fd587c5b-b773-4a0b-8bc9-459266945462"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Art by Natan Maia\nand Sawyer Friend"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "66bbf080-ad28-4e8f-91f4-c987c4f512d7"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Music by CallMeDJ"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "0f385e09-d505-49ea-8dac-a0e23a2434b5"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Story by Sawyer\nFriend, Natan Maia",
+                                        "CallMeDJ, and\nMoogleRampage"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "19bbd05e-90b7-43bf-883c-38fdeff2215d"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Writing by Sawyer\nFriend and",
+                                        "Natan Maia"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "eba9ab89-32a3-4933-a3c7-463d586c2b36"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Thank You For\nPlaying!"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "d4ca0621-ee4e-4e71-8fe9-ba5b6c95fbbe"
+                            }
                         ],
-                        "avatarId": "",
-                        "__collapse": false
+                        "false": []
                     },
-                    "id": "fd587c5b-b773-4a0b-8bc9-459266945462"
+                    "id": "c317de2d-936e-479a-ab50-77b4ad5d1f46"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -3938,7 +4301,73 @@
             "symbol": "scene_8",
             "x": 382.5142865862162,
             "y": 68.76190476190479,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_12",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "14",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The box is locked."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "40182e6d-6959-423d-83b7-fe5214717360"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "98798102-04bb-4ef7-b959-39eac7ea6480"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Click! There's a\nkey inside!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "68693e31-ab44-49eb-9bc3-6781026a6e7e"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "15",
+                                "__collapse": false
+                            },
+                            "id": "27c577f7-6c3d-40d6-b872-ed5a56303d50"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "d3226382-03c6-47e9-b2c8-41918b78e41a",
+                    "x": 6,
+                    "y": 9
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -3968,7 +4397,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": "2b74cf40-8af8-4f25-bd22-9985c082523f"
+            "playerSpriteSheetId": "2b74cf40-8af8-4f25-bd22-9985c082523f",
+            "autoFadeEventCollapse": true
         },
         {
             "name": "Motel Hallway 3",
@@ -4415,6 +4845,40 @@
                     "id": "3141fe80-0bde-49ff-91cf-89c5a4d8adf2",
                     "x": 4,
                     "y": 7
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_14",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Locked."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "0a0b0efd-07d5-4722-aa32-26d0a08f8a55"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "25c15027-5115-4cb5-afc2-a3aa282f5ad3",
+                    "x": 14,
+                    "y": 7
                 }
             ],
             "triggers": [
@@ -4437,29 +4901,6 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "04e0a035-4f93-4132-9417-518c335559d2"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
-                    "id": "01991626-1722-4d7b-8cda-92005f5abbee",
-                    "x": 14,
-                    "y": 7,
-                    "symbol": "trigger_20",
-                    "width": 2,
-                    "height": 1,
-                    "script": [
-                        {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "b2208381-fe70-4d96-84e3-d3037d9d8ff9",
-                                "x": 8,
-                                "y": 13,
-                                "direction": "up",
-                                "fadeSpeed": "2"
-                            },
-                            "id": "5cc3a61d-6e7c-4231-a567-b023f945005a"
                         }
                     ],
                     "leaveScript": []
@@ -4869,7 +5310,49 @@
             "symbol": "scene_10",
             "x": 1319.5428641183028,
             "y": 52.57142857142856,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "10b260a0-1d72-4497-a459-1ce2f6789171",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_15",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Emcee: That's the\ncrowbar!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "1ad43d99-6165-4c84-8596-ab0a276bf1bb"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "16"
+                            },
+                            "id": "c5bf7a66-4489-4abd-aa1a-80f6ea3fe3ea"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "2c3a6a64-fc1c-4442-8281-f5e6d63b2cd2",
+                    "x": 9,
+                    "y": 7
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -4883,8 +5366,8 @@
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "56ab2e02-a2bf-48c5-a9e3-f521d705d182",
-                                "x": 14,
+                                "sceneId": "ccdbf406-8afb-45ce-9600-edec2144dc87",
+                                "x": 8,
                                 "y": 8,
                                 "direction": "down",
                                 "fadeSpeed": "2"
@@ -4944,7 +5427,8 @@
             "height": 18,
             "imageWidth": 176,
             "imageHeight": 144,
-            "filename": "hallway2.png"
+            "filename": "hallway2.png",
+            "tileColors": []
         },
         {
             "id": "974caa9c-064a-4cc5-ada8-9fb4e0408f4b",
@@ -8304,6 +8788,22 @@
     "customEvents": [],
     "music": [
         {
+            "id": "95fd1aaf-2338-41a6-97b3-75eeb01b25ee",
+            "name": "Ending",
+            "symbol": "song_ending",
+            "filename": "Ending.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "d4b82786-e31e-40b4-8885-d23644b3d5de",
+            "name": "Title",
+            "symbol": "song_title",
+            "filename": "Title.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "25af2b5f-283f-4043-ac53-5f07141e67ac",
             "name": "song_template_1",
             "symbol": "song_song_template_1",
@@ -8426,6 +8926,31 @@
             "id": "12",
             "name": "DidWakeUpBeginning",
             "symbol": "var_didwakeupbeginning"
+        },
+        {
+            "id": "13",
+            "name": "LockedJanitorCloset",
+            "symbol": "var_lockedjanitorcloset"
+        },
+        {
+            "id": "14",
+            "name": "JanitorKey",
+            "symbol": "var_janitorkey_0"
+        },
+        {
+            "id": "15",
+            "name": "AnotherDamnKey",
+            "symbol": "var_anotherdamnkey"
+        },
+        {
+            "id": "9f44954b-5488-41ca-9a88-3e5663d30c6c__L0",
+            "name": "Local 0",
+            "symbol": "var_local_0"
+        },
+        {
+            "id": "16",
+            "name": "CrowbarGot",
+            "symbol": "var_crowbargot"
         }
     ],
     "engineFieldValues": [
@@ -8443,9 +8968,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 277.6000061035156,
+        "worldScrollX": 536,
         "worldScrollY": 0,
-        "zoom": 87.5,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -8473,9 +8998,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            204,
-            141,
-            402
+            202,
+            140,
+            399
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
